@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="usac.centrocalculo.ui.VentanaPrincipalController">
+   <children>
+      <SplitPane dividerPositions="0.21485943775100402" layoutX="10.0" layoutY="10.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="800.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Text fontSmoothingType="LCD" layoutX="143.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombramientos Centro de Calculo" textAlignment="CENTER">
+                     <font>
+                        <Font name="Book Antiqua" size="33.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <GridPane alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="388.0" prefWidth="798.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <children>
+                              <Button fx:id="btnVentanaExcel" alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="15.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#abrirVentanaExcel" prefHeight="100.0" prefWidth="200.0" text="URyS" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Book Antiqua" size="25.0" />
+                                 </font></Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="btnVentanaForma041" alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="15.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#abrirVentana041" prefHeight="100.0" prefWidth="200.0" text="Forma041" textAlignment="CENTER" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Book Antiqua" size="25.0" />
+                                 </font></Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <Button alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="15.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#abrirVentanaNotificaciones" prefHeight="100.0" prefWidth="200.0" text="Notificaciones" textAlignment="CENTER" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Book Antiqua" size="25.0" />
+                                 </font></Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

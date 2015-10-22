@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="usac.centrocalculo.ui.VentanaExcelController">
+   <children>
+      <SplitPane dividerPositions="0.13582677165354332" layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="510.0" prefWidth="810.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" SplitPane.resizableWithParent="false">
+               <children>
+                  <Button fx:id="btnBuscarDir" layoutX="70.0" layoutY="23.0" mnemonicParsing="false" onAction="#buscarCarpetaExcel" prefHeight="32.0" prefWidth="126.0" text="Seleccionar Archivo" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+                  <TextField fx:id="txtRuta" editable="false" layoutX="246.0" layoutY="26.0" prefHeight="25.0" prefWidth="517.0" />
+                  <Button fx:id="btnSendData" layoutX="272.0" layoutY="9.0" mnemonicParsing="false" onAction="#insertData" prefHeight="40.0" prefWidth="210.0" text="Insertar Informacion" visible="false">
+                     <font>
+                        <Font name="Century" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tablaURyS" prefHeight="415.0" prefWidth="798.0">
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <columns>
+                  <TableColumn fx:id="columna1" maxWidth="85.0" prefWidth="39.0" resizable="false" text="No." />
+                  <TableColumn fx:id="columna2" minWidth="100.0" prefWidth="150.0" text="Dependencia" />
+                  <TableColumn fx:id="columna3" minWidth="100.0" prefWidth="100.0" text="Titulo" />
+                  <TableColumn fx:id="columna4" minWidth="100.0" prefWidth="100.0" text="Partida" />
+                  <TableColumn fx:id="columna5" minWidth="100.0" prefWidth="100.0" text="Salario" />
+                  <TableColumn fx:id="columna6" minWidth="100.0" prefWidth="150.0" text="Horario (Dias)" />
+                  <TableColumn fx:id="columna7" minWidth="100.0" prefWidth="150.0" text="Horario (Horas)" />
+                  <TableColumn fx:id="columna8" minWidth="100.0" prefWidth="150.0" text="Motivo Vacante" />
+                  <TableColumn fx:id="columna9" minWidth="100.0" prefWidth="150.0" text="Nombres" />
+                  <TableColumn fx:id="columna10" minWidth="100.0" prefWidth="150.0" text="Apellidos" />
+                  <TableColumn fx:id="columna11" minWidth="100.0" prefWidth="150.0" text="Registro Personal" />
+                  <TableColumn fx:id="columna12" minWidth="100.0" prefWidth="150.0" text="Vigencia Puesto" />
+                  <TableColumn fx:id="columna13" minWidth="100.0" prefWidth="150.0" text="Nombre Propuesta" />
+                  <TableColumn fx:id="columna14" minWidth="100.0" prefWidth="100.0" text="Apellido Propuesta" />
+                  <TableColumn fx:id="columna15" minWidth="100.0" prefWidth="75.0" text="Fecha Ingreso" />
+                  <TableColumn fx:id="columna16" minWidth="100.0" prefWidth="75.0" text="Autoriza" />
+                  <TableColumn fx:id="columna17" minWidth="75.0" prefWidth="75.0" text="Genero" />
+                  <TableColumn fx:id="columna18" minWidth="50.0" prefWidth="75.0" text="Edad" />
+                  <TableColumn fx:id="columna19" minWidth="75.0" prefWidth="75.0" text="Fecha Nacimiento" />
+                  <TableColumn fx:id="columna20" minWidth="100.0" prefWidth="75.0" text="Lugar Residencia" />
+                  <TableColumn fx:id="columna21" minWidth="100.0" prefWidth="75.0" text="Escolaridad" />
+                  <TableColumn fx:id="columna22" editable="false" minWidth="100.0" prefWidth="75.0" sortable="false" text="Experiencia" />
+               </columns>
+            </TableView>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

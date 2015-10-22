@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="usac.centrocalculo.ui.VentanaNotificacionesController">
+   <children>
+      <SplitPane layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="510.0" prefWidth="810.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="btnBuscarDir" layoutX="70.0" layoutY="23.0" mnemonicParsing="false" onAction="#buscarCarpetaNotificaciones" prefHeight="32.0" prefWidth="126.0" text="Seleccionar carpeta" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+                  <TextField fx:id="txtRuta" editable="false" layoutX="246.0" layoutY="26.0" prefHeight="25.0" prefWidth="517.0" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
